@@ -1,0 +1,307 @@
+@font-face{
+    font-family: 'Ubermovebold';
+    src: url(/Ubereats/font/Ubermovebold.woff2);
+}
+@font-face{
+    font-family: 'Ubermovetext';
+    src: url(/Ubereats/font/Ubermovetext.woff2);
+}
+@font-face{
+    font-family: 'Ubermovetextmedium';
+    src: url(/Ubereats/font/Ubermovetextmedium.woff2);
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body,html{
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.head{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    height: 64px;
+    
+}
+.ubereat{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 64px;
+    align-items: center;
+}
+.left{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.left >div{
+    left: 0;
+}
+.threeline svg{
+    margin-right: 18px;
+}
+.ubertitle img{
+    width: 89px;
+    height:16px ;
+    margin-top: 2px;
+    margin-left: 4px;
+    margin-right: 28px;
+}
+
+.right{
+    
+
+}
+.sign{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+.sign li a{
+    text-decoration: none;
+    letter-spacing: normal;
+    text-align: center;
+}
+.sign li{
+    list-style-type: none;
+    
+
+   
+   
+}
+
+.sign li .in{
+    
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Ubermovetextmedium',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(48, 48, 48);
+    border-radius: 9999px;
+    background: white;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: normal;
+    padding: 8px 10px 8px 10px;
+    align-items: center;
+    background-clip: border-box;
+
+
+}
+
+.sign li .up{
+    box-sizing: border-box;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    color: rgb(255, 255, 255);
+    font-family: 'Ubermovetextmedium';
+    border-radius: 9999px;
+    background: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: normal;
+    padding: 8px 10px 8px 10px;
+    
+
+   
+}
+
+.human svg{
+    width: 16px;
+    height: 16px;
+    
+    
+}
+.human{
+    align-items: center;
+    background:white;
+    padding: 6px 9px 4px 9px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.main-aria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background: url(/Ubereats_3/Images/uberheader.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Main{
+    width: 100%;
+    box-sizing: border-box;
+    color: black;
+    padding: 0 40px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+   
+   
+
+}
+.order{
+    font-size: 52px;
+    line-height: 64px;
+    letter-spacing: normal;
+    font-weight: 700;
+    font-family: 'Ubermovebold',sans-serif; 
+    margin-bottom: 40px;
+    max-width: 60%;
+}
+.linear{
+    display: flex;
+    gap:8px ;
+}
+.location{
+    display: flex;
+    border: 2px solid transparent;
+    justify-content:flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: 499.8px;
+    background: white;
+    
+    
+}
+.location .locationimage{
+    padding: 14px;
+    margin-top: 4px;
+}
+.location .text input{
+    border: none;
+}
+.location  .text{
+    font: inherit;
+    color: inherit;
+    border: none;
+    letter-spacing: inherit;
+    width: 100%;
+    max-width: fit-content;
+    
+   
+
+}
+.loca::placeholder{
+    font-family: 'Ubermovetextmedium';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: normal;
+    font-weight: 500;
+    color: rgb(102, 102, 102);
+    
+}
+
+.delivery{
+    display: flex;
+    align-items: center;
+    border: 2px solid transparent;
+    background: white;
+    width: 100%;
+    max-width: 191px;
+    
+}
+.deliveryone{
+    display: flex;
+    
+}
+.deliveryone .textsize input{
+   align-items: center;
+   border:none ;
+    width: 90px;
+    align-items: center;
+}
+.deliver::placeholder{
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: normal;
+    font-weight: 500;
+    color: black;
+    font-family: 'Ubermovetextmedium';
+    width: 100%;
+    max-width: 90px;
+    
+
+}
+.clockimage{
+    margin-left: 14px;
+    margin-top: 5px;
+}
+
+.mark{
+    margin-top: 5px;
+}
+.search{
+    align-items: center;
+    align-content: center;
+    border: none;
+    background: black;
+    border-radius: 8px;
+    justify-content: center;
+    
+    width: max-content;
+    height: 56px;
+
+}
+.search button{
+    border: none;
+    letter-spacing: normal;
+    background: black;
+    color: white;
+    font-family: 'Ubermovetextmedium';
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 16.5px;
+    padding-right: 16.5px;
+    
+}
+.signs{
+    padding-top: 10px;
+}
+.signs p{
+    font-family: 'Ubermovetextmedium';
+    letter-spacing: normal;
+    line-height: 16px;
+    letter-spacing: normal;
+    font-size: 14px;
+    font-weight: 500;
+   
+    color: rgb(0, 0, 0);
+}
+.signs a{
+    font-family: 'Ubermovetextmedium';
+    color: rgb(0, 0, 0);
+    line-height: 16px;
+    letter-spacing: normal;
+    font-size: 14px;
+    font-weight: 500;
+}

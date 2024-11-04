@@ -1,0 +1,29 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevent body scroll */
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+}
+
+.fixed-sidebar {
+    width: 250px; /* Fixed width for sidebar */
+    background: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden; /* Prevent sidebar from scrolling */
+}
+
+.scrolling-content {
+    margin-left: 250px; /* Offset content from sidebar */
+    padding: 20px;
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Enables vertical scrolling */
+}

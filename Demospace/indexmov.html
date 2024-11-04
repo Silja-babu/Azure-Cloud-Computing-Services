@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(to right, #8A2BE2, #87CEEB); /* Gradient from purple to sky blue */
+            color: white;
+            padding: 10px 20px; /* Padding for spacing */
+            display: flex;
+            justify-content: space-between; /* Space between child elements */
+            align-items: center; /* Center-align items vertically */
+            box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+        }
+
+        .preview {
+            max-width: 70%; /* Limit width to prevent overflow */
+        }
+
+        .preview h3, .preview p {
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            background-color: #ffffff; /* Button background color */
+            color: #8A2BE2; /* Button text color */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #f0f0f0; /* Button hover effect */
+        }
+    </style>
+    <title>Footer Layout Example</title>
+</head>
+<body>
+    <footer>
+        <div class="preview">
+            <h3>Preview of Spotify</h3>
+            <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+        </div>
+        <div><button>Sign up for free</button></div>
+    </footer>
+</body>
+</html>
+

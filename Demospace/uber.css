@@ -1,0 +1,16 @@
+body{
+    margin:0;
+    width: 100%;
+    height: 100%;
+}
+.headimage{
+    background: url(/ubereats/Images/uberheader.png);
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    background-size: cover; 
+    background-position: center; 
+    height:auto; 
+    background-position: fixed;
+    margin: 0;
+}

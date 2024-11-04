@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+         
+        .form-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px; /* Adjust the max width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    border-radius: 8px;
+}
+
+.destination {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; /* Line after each div */
+}
+
+.destination:last-child {
+    border-bottom: none; /* No line after the last div */
+}
+
+.destination input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.large {
+    flex: 1; /* Makes this field occupy more space */
+}
+
+.search {
+    padding: 10px 0;
+    text-align: right; /* Aligns search icon to the right */
+}
+
+.divider {
+    height: 1px;
+    background: #ddd;
+    margin: 0;
+}
+
+    </style>
+</head>
+<body>
+    <div class="header header-left">
+        Left Header
+    </div>
+    <div class="header header-right">
+        Right Header
+    </div>
+    <div class="center-content">
+        <div class="top-row">
+            <div style="background: #e0e0e0;">Top Column 1</div>
+            <div style="background: #ddd;">Top Column 2</div>
+        </div>
+        <div class="bottom-row">
+            <div>Bottom Column 1</div>
+            <div>Bottom Column 2</div>
+            <div>Bottom Column 3</div>
+            <div>Bottom Column 4</div>
+            <div>Bottom Column 5</div>
+        </div>
+    </div>
+    <div class="form-container">
+        <div class="destination one">
+            <label class="dest1" for="where">Where</label>
+            <input type="text" id="where" name="where" placeholder="Search destinations">
+        </div>
+        <div class="divider"></div>
+        <div class="destination two">
+            <label for="check">Check in</label>
+            <input type="text" id="check" name="check" placeholder="Add dates">
+        </div>
+        <div class="divider"></div>
+        <div class="destination three">
+            <label for="out">Check out</label>
+            <input type="text" id="out" name="out" placeholder="Add dates">
+        </div>
+        <div class="divider"></div>
+        <div class="destination four large">
+            <label for="who">Who</label>
+            <input type="text" id="who" name="who" placeholder="Add guests">
+        </div>
+        <div class="search">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="display:block;fill:white;height:16px;width:16px;stroke:white;stroke-width:4;overflow:visible" aria-hidden="true" role="presentation" focusable="false">
+                <path fill="none" d="M13 24a11 11 0 1 0 0-22 11 11 0 0 0 0 22zm8-3 9 9"></path>
+            </svg>
+        </div>
+    </div>
+    
+</body>
+</html>
+ 
+
+
+
+

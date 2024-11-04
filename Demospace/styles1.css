@@ -1,0 +1,15 @@
+/* styles.css */
+
+.heading-container {
+    width: 300px; /* Fixed width for the heading */
+    overflow: hidden; /* Hide overflow */
+}
+
+.fixed-heading {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit text to two lines */
+    -webkit-box-orient: vertical; /* Vertical box layout */
+    overflow: hidden; /* Hide any overflow */
+    text-overflow: ellipsis; /* Display ellipsis when text overflows */
+    margin: 0; /* Remove default margin */
+}
